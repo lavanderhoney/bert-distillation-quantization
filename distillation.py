@@ -43,7 +43,7 @@ def get_data():
     return train_dl, test_dl, dummy_data
 # print(data[12])
 
-def load_student_teacher_models(teacher_path: str ="models/bert_finetuned", 
+def load_student_teacher_models(teacher_path: str ="milapp857/bert-finetuned-txt-classification", 
                                 VOCAB_SIZE: int = 30000, 
                                 N_SEGMENTS: int = 2, 
                                 MAX_LEN: int = 512, 
