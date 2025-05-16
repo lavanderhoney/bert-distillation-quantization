@@ -65,6 +65,9 @@ python finetuning.py
 * Reads `df_file.csv`, splits into train/test (80/20)
 * Tokenizes with `BertTokenizerFast`
 * Uses Hugging Face `Trainer` for 5 epochs, saving outputs to `outputs/` and `files/models/bert_finetuned.
+
+Finetuning training results:
+![alt text](<Screenshot 2025-05-16 105850.png>)
 ---
 
 ### 2. Distillation (`distillation.py` & `distillbert.py`)
@@ -81,6 +84,8 @@ python distillation.py
 * Saves the distilled student model to `files/models/student_model.pt`.
 * Usually, to distill a teacher model, we would begin with a pretrained model, and then perform the distillation process. Here, I have not done that, since my main focus was to learn about knowledge distillation and architecture of BERT.
 
+Distillation training results:
+![alt text](<Screenshot 2025-05-07 182449.png>)
 ---
 
 ### 3. Quantization (`quantization.py`)
